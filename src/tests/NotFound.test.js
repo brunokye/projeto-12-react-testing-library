@@ -4,7 +4,7 @@ import renderWithRouter from '../renderWithRouter';
 import { NotFound } from '../pages';
 
 describe('Testa o componente <NotFound.js />', () => {
-  it('Teste se a página contém um heading h2 com o texto Page requested not found', () => {
+  it('Testa se a página contém um heading h2 com o texto "Page requested not found"', () => {
     renderWithRouter(<NotFound />);
 
     const notFoundTitle = screen.getByRole('heading', { name: /page requested not found/i });
