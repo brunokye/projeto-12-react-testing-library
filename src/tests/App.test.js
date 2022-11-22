@@ -53,7 +53,7 @@ describe('Testa o componente <App.js />', () => {
     expect(favoritesTitle).toBeInTheDocument();
   });
 
-  it('Testa se a aplicação é redirecionada para a página "Favorite Pokémon"', () => {
+  it('Testa se a aplicação é redirecionada para a página "Not Found"', () => {
     const { history } = renderWithRouter(<App />);
     const INVALID_URL = '/pagina/que-nao-existe/';
 
