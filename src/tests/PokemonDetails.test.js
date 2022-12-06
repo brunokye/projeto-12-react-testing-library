@@ -5,13 +5,15 @@ import renderWithRouter from '../renderWithRouter';
 import App from '../App';
 
 describe('Testa o componente <PokemonDetails.js />', () => {
+  const pkmName = 'pokemon-name';
+
   it('Testa se as informações detalhadas do Pokémon selecionado são mostradas na tela', () => {
     renderWithRouter(<App />);
 
     const detailsButton = screen.getByRole('link', { name: /more details/i });
     userEvent.click(detailsButton);
 
-    const pokemonName = screen.getByTestId('pokemon-name');
+    const pokemonName = screen.getByTestId(pkmName);
     const pikachu = pokemonName.textContent;
     const detailsTitle = screen.getByRole('heading', { name: `${pikachu} Details` });
 
@@ -33,7 +35,7 @@ describe('Testa o componente <PokemonDetails.js />', () => {
     const detailsButton = screen.getByRole('link', { name: /more details/i });
     userEvent.click(detailsButton);
 
-    const pokemonName = screen.getByTestId('pokemon-name');
+    const pokemonName = screen.getByTestId(pkmName);
     const pikachu = pokemonName.textContent;
     const locationsTitle = screen.getByRole('heading', { name: `Game Locations of ${pikachu}` });
 
@@ -52,7 +54,7 @@ describe('Testa o componente <PokemonDetails.js />', () => {
     const detailsButton = screen.getByRole('link', { name: /more details/i });
     userEvent.click(detailsButton);
 
-    const pokemonName = screen.getByTestId('pokemon-name');
+    const pokemonName = screen.getByTestId(pkmName);
     const pikachu = pokemonName.textContent;
     const detailsLabel = screen.getByLabelText(/pokémon favoritado?/i);
     const detailsCheckbox = screen.getByRole('checkbox');
