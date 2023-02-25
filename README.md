@@ -2,7 +2,7 @@
 
 Nesse projeto você escreverá testes para uma aplicação React que já está criada e configurada, utilizando Jest e a biblioteca React Testing Library. Você não precisará realizar nenhuma configuração adicional.
 
-A aplicação contém uma implementação completa de todos os requisitos da Pokédex. Seu trabalho será, para cada requisito listado, escrever testes que garantam sua corretude. Cuidado com testes falsos positivos. Falsos positivos serão desconsiderados na avaliação.
+A aplicação contém uma implementação completa de todos os requisitos da Pokédex. Seu trabalho será, para cada requisito listado, escrever testes que garantam sua corretude. Cuidado com testes falsos positivos, pois serão desconsiderados na avaliação.
 
 ## Projeto
 
