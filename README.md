@@ -19,7 +19,7 @@ Clone o projeto
 Entre no diretório
 
 ```bash
-  cd trybe-12-react-testing-library
+  cd trybe-12-react-testing-library/
 ```
 
 Instale as dependências
